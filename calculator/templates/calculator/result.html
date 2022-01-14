@@ -1,0 +1,27 @@
+{% extends 'calculator/base.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-5 offset-4" style="text-align: center;">
+        <h4 class="text-center alert alert-info">This is Result Page</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Mean</th>
+                    <th scope="col">Median</th>
+                    <th scope="col">Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">0</th>
+                    <td>{{result.0}}</td>
+                    <td>{{result.1}}</td>
+                    <td>{{result.2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}

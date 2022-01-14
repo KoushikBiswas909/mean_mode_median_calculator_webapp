@@ -1,0 +1,13 @@
+{% extends 'calculator/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-5 offset-10 style=" text-align: center;">
+        <h4 class="text-center alert alert-info">This is Value Input page</h4>
+        <form action="add">
+            <input class="form-control form-control-lg" type="text"
+                placeholder="Enter Numbers, Give space middle of two different number" name="list">
+            <input type="Submit" class="btn btn-success" value="Calculate">
+        </form>
+    </div>
+</div>
+{% endblock content %}
